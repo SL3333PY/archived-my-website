@@ -1,5 +1,3 @@
-import React, { useEffect } from 'react';
-
 const Resume = () => {
   return (
     <div style={{width: "100%", height: "90vh", overflow: 'hidden'}}>

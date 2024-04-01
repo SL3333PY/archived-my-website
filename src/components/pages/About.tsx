@@ -1,10 +1,11 @@
+
 interface Props {
   aboutMe: string;
   education: string;
   skills: string;
 }
 
-const About = ({ aboutMe, education, skills }) => {
+const About = ({ aboutMe, education, skills }: Props) => {
   return (
     <div style={{ 
       fontFamily: 'Trebuchet MS',

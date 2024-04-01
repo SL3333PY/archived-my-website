@@ -15,24 +15,24 @@ const NavBar = () => {
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
         <li className="nav-item">
           <Link className="nav-link" aria-current="page" to="/">
-          <font face="Cascadia code">HOME&ensp;</font>
+          <span style={{ fontFamily: "Cascadia code" }}>HOME&ensp;</span>
           </Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/about">
-          <font face="Cascadia code">ABOUT&ensp;</font>
+          <span style={{ fontFamily: "Cascadia code" }}>ABOUT&ensp;</span>
           </Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/projects">
-          <font face="Cascadia code">PROJECTS&ensp;</font>
+          <span style={{ fontFamily: "Cascadia code" }}>PROJECTS&ensp;</span>
           </Link>
         </li>
       </ul>
         <form className='d-flex'>
           <Link to="/resume">
             <button className="btn btn-outline-info" type="submit">
-            <font face="Cascadia code">CV</font>
+            <span style={{ fontFamily: "Cascadia code" }}>CV</span>
             </button>
           </Link>
         </form>
