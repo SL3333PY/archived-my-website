@@ -11,12 +11,34 @@ function App() {
     const description2 = "Studying Computer Science and Information Engineering at NCU";
     const github = "https://github.com/SL3333PY";
     const linkedin = "https://www.linkedin.com/in/jin-ru-hsieh/";
-    const aboutMe = "ya";
-    const education = "NCU";
-    const skills = "C++, Python";
+    const aboutMe = "Hi. I'm Kim, a junior student majoring in Computer Science and Information Engineering (CSIE) at National Central University (NCU).";
+    const education = "TFGH, NCU";
+    const skills = "C++, Python, Java, x86 Assembly, MySQL, SQLite";
+
+    const projects = [
+        {
+          name: "Auction",
+          description: "Description",
+          image: "/src/assets/Auction.png",
+          labels: ["Python", "TCP", "PyQt"]
+        },
+        {
+          name: "Portfolio",
+          description: "Peronal Portfolio",
+          image: "/src/assets/Portfolio.png",
+          labels: ["Typescript", "React"]
+        },
+        {
+            name: "Project 3",
+            description: "Description of Project 3",
+            image: "url_to_image",
+            labels: ["Python", "React", "MySQL"]
+          }
+        // More projects
+      ];
 
     return (
-        <Router>
+        <Router basename={ process.env.PUBLIC_URL }>
             <div>
                 <NavBar />
                 <Routes>
@@ -34,7 +56,7 @@ function App() {
                         education = { education }
                         skills = { skills }
                     /> } />
-                    <Route path="/projects" element={ <Projects /> } />
+                    <Route path="/projects" element={ <Projects projects={projects} /> } />
                     <Route path="/resume" element={<Resume />} />
                 </Routes>
             </div>
